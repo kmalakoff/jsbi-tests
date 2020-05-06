@@ -43,4 +43,20 @@ export default [
       { name: 'JSBI', file: pkg.browser, format: 'umd' }
     ],
   },
+  {
+    input: 'tests/tests.mjs',
+    plugins: [babel()],
+    output: [
+      // Create a browser-friendly UMD build.
+      { file: 'dist/tests/tests.js', format: 'cjs' },
+    ],
+  },
+  {
+    input: 'tests/as-int-n.mjs',
+    plugins: [babel()],
+    output: [
+      // Create a browser-friendly UMD build.
+      { file: 'dist/tests/as-int-n.js', format: 'cjs' },
+    ],
+  },
 ];

@@ -1,5 +1,5 @@
 {
-  "name": "jsbi",
+  "name": "jsbi-tests",
   "version": "3.1.2",
   "repository": "GoogleChromeLabs/jsbi",
   "devDependencies": {
